@@ -13,10 +13,10 @@ public class BubbleSort {
 		{
 			swapped = false;
 			
-			for(j = 0; j < n - i -1; i++) 
+			for(j = 0; j < n - i -1; j++) 
 			{				
 				//swap if one on the left is greater
-				if(arr[j] > arr [j+1]) 
+				if(arr[j] > arr [j + 1]) 
 				{
 					temp = arr[j];
 					arr[j] = arr[j + 1];

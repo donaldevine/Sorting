@@ -4,23 +4,25 @@ public class Sorting {
 	
 	public static void main(String args[]) {
 		
-		int insertionSortArr[] = {12, 11, 13, 5, 6};
-		
-		InsertionSort insertionSort = new InsertionSort();
-		
-		System.out.println("Insertion Sort");
-		insertionSort.sort(insertionSortArr);
-		
+		int insertionSortArr[] = {12, 11, 13, 5, 6};		
+		InsertionSort insertionSort = new InsertionSort();		
+		System.out.println("Insertion Sort: ");
+		insertionSort.sort(insertionSortArr);		
 		printArray(insertionSortArr);
 		
         
-		SelectionSort selectionSort = new SelectionSort();
-        
-		int selectionSortArr[] = {64,25,12,22,11};
-		
+		SelectionSort selectionSort = new SelectionSort();        
+		int selectionSortArr[] = {64,25,12,22,11};		
 		selectionSort.sort(selectionSortArr);
-        System.out.println("Selection array");
+        System.out.println("Selection Sort: ");
         printArray(selectionSortArr);
+        
+        
+        int bubbleSortArr[] = { 64, 34, 25, 12, 22, 11, 90 };        
+        BubbleSort bubbleSort = new BubbleSort();        
+        bubbleSort.sort(bubbleSortArr);        
+        System.out.println("Bubble Sort: ");
+        printArray(bubbleSortArr);
 		
 	}
 	
