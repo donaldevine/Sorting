@@ -23,6 +23,15 @@ public class Sorting {
         bubbleSort.sort(bubbleSortArr);        
         System.out.println("Bubble Sort: ");
         printArray(bubbleSortArr);
+        
+        
+        int mergeSortArr[] = { 12, 11, 13, 5, 6, 7 };
+                 
+        MergeSort mergeSort = new MergeSort();
+        mergeSort.sort(mergeSortArr, 0, mergeSortArr.length - 1);
+ 
+        System.out.println("Merge Sort: ");
+        printArray(mergeSortArr);
 		
 	}
 	
